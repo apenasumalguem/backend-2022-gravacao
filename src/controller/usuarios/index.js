@@ -80,6 +80,23 @@ class Usuarios {
   }
 
   async update(req, res, next) {
+    let usuarioSchema = object({
+      usu_email: string()
+        .email("Entre com um e-mail válido"),
+      usu_senha: string()
+        .matches(
+          /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{6,})/,
+          "A senha precisa ter no mínimo 6 caracteres, sendo: uma maiúscula, uma minúscula, um número e um caracter especial"
+        ),
+    });
+    try {
+      await usuarioSchema.validate(req.body);
+    } catch (error) {
+      //return res.status(400).json({ error: error.message });
+      return res.status(400).send({error: error.message}).end();
+      //return res.status(400).end({ error: error.message });
+    }
+    
     req.body = { ...req.body, updated_at: new Date() };
     next();
   }
