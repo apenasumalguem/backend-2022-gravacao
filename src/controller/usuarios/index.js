@@ -130,7 +130,7 @@ class Usuarios {
       .find({ id: parseInt(id, 10) })
       .value();
 
-    if (!usuario) return res.st(400).send({ error: "id not found" }).end();
+    if (!usuario) return res.status(400).send({ error: "id not found" }).end();
 
     if (usuario.usu_foto !== "") {
       try {

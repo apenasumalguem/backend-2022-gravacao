@@ -11,7 +11,8 @@
       "usu_cpf": "045.387.160-57",
       "usu_cadastroativado": true,
       "usu_created_at": "2020-09-19T14:54:35Z",
-      "usu_updated_at": "2020-11-19T19:52:07Z"
+      "usu_updated_at": "2023-08-10T16:58:56.706Z",
+      "usu_foto": "1691686736699-1.png"
     },
     {
       "id": 2,
@@ -56,17 +57,17 @@
     },
     {
       "usu_email": "nada@nada.com",
-      "usu_senha": "u1234",
+      "usu_senha": "U123456u!",
       "usu_nome": "Usuário Teste",
       "usu_nivel": "comum",
       "usu_celular": "",
       "usu_cpf": "",
       "usu_foto": "",
-      "usu_chave": "piJ1djzw1t",
-      "usu_emailconfirmado": false,
-      "usu_cadastroativo": false,
+      "usu_chave": "",
+      "usu_emailconfirmado": true,
+      "usu_cadastroativo": true,
       "created_at": "2023-08-09T11:01:32.694Z",
-      "updated_at": "2023-08-09T11:01:45.911Z",
+      "updated_at": "2023-08-10T16:10:44.028Z",
       "id": 5
     }
   ],
