@@ -4,7 +4,7 @@ class Projetos {
     async store(req, res, next) {
         let projetoSchema = object({
             pro_titulo: string().required("Entre com o nome do projeto"),
-            pro_inicio: date().required("Entre com a data de início do projeto")
+            pro_inicio: date().required("Entre com a data"),
         })
 
         try {
